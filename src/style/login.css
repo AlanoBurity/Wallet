@@ -1,0 +1,15 @@
+body {
+    background-color: white;
+}
+
+#loginBox {
+    background-color: #d3bde7;
+    border:solid black 2px;
+    width: 250px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 400px;
+    margin-top: 10%;
+}
