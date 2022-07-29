@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { setEmail as sendEmailAction } from '../redux/actions';
-import '../style/login.css';
 
 const minPassword = 6;
 
