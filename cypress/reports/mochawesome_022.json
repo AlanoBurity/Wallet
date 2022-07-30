@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-07-30T23:04:54.403Z",
+    "end": "2022-07-30T23:04:54.435Z",
+    "duration": 32,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "20d495b3-6b5b-4d3f-a70d-424abfe6094e",
+      "title": "",
+      "fullFile": "cypress/integration/secrets/03.Startest_spec.js",
+      "file": "cypress/integration/secrets/03.Startest_spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1c80d45c-53b5-4cae-a1c7-a16ef8a626d4",
+          "title": "Requisito 3 Startest não avaliativo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "🌟 Startest - Desenvolva os testes automatizados do requisito 3",
+              "fullTitle": "Requisito 3 Startest não avaliativo 🌟 Startest - Desenvolva os testes automatizados do requisito 3",
+              "timedOut": null,
+              "duration": 20,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const walletStartest = new _startest.default({\n  testFileName: '03.star.test.js',\n  componentPath: 'src/components/WalletForm',\n  mockName: 'WalletForm',\n  defaultProps: {\n    valueTestId: _constants.VALUE_INPUT_TEST_ID,\n    descriptionTestId: _constants.DESCRIPTION_INPUT_TEST_ID,\n    methodTestId: _constants.METHOD_INPUT_TEST_ID,\n    currencyTestId: _constants.CURRENCY_INPUT_TEST_ID,\n    tagTestId: _constants.TAG_INPUT_TEST_ID,\n    methodOptions,\n    tagOptions,\n    shouldFetchCurrencies: true,\n    shouldDispatchCurrencies: true\n  }\n});\nconst testCases = [{\n  valueTestId: ''\n}, {\n  descriptionTestId: ''\n}, {\n  methodTestId: ''\n}, {\n  currencyTestId: ''\n}, {\n  tagTestId: ''\n}, {\n  methodOptions: []\n}, {\n  tagOptions: []\n}, {\n  shouldFetchCurrencies: false\n}, {\n  shouldDispatchCurrencies: false\n}];\nconst logCreators = {\n  methodOptions: 'Métodos de pagamento',\n  tagOptions: 'Opções de tags',\n  shouldFetchCurrencies: () => 'Fetch de currencies não está sendo realizado',\n  shouldDispatchCurrencies: () => 'Currencies não estão sendo salvas no redux'\n};\nawait walletStartest.runTestCases(testCases, logCreators);",
+              "err": {
+                "message": "ReferenceError: methodOptions is not defined",
+                "estack": "ReferenceError: methodOptions is not defined\n    at Context.eval (http://localhost:42077/__cypress/tests?p=cypress/integration/secrets/03.Startest_spec.js:329:9)",
+                "diff": null
+              },
+              "uuid": "a84acaef-4b14-4981-aedd-315a7fd16d43",
+              "parentUUID": "1c80d45c-53b5-4cae-a1c7-a16ef8a626d4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "a84acaef-4b14-4981-aedd-315a7fd16d43"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 20,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

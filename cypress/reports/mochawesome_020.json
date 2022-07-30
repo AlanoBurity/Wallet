@@ -1,0 +1,179 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 0,
+    "pending": 0,
+    "failures": 4,
+    "start": "2022-07-30T23:04:46.713Z",
+    "end": "2022-07-30T23:04:50.758Z",
+    "duration": 4045,
+    "testsRegistered": 4,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "58bbe4cb-72f2-4e9b-ae67-bb47ba37b02f",
+      "title": "",
+      "fullFile": "cypress/integration/10.TestCoverage_spec.js",
+      "file": "cypress/integration/10.TestCoverage_spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3454043a-2970-4b6b-9c16-0a1b1d0c1a1f",
+          "title": "10 - Desenvolva testes para atingir 90% de cobertura total da aplicação",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Cobertura de \"Statements\" total deverá ser maior ou igual a 90.",
+              "fullTitle": "10 - Desenvolva testes para atingir 90% de cobertura total da aplicação Cobertura de \"Statements\" total deverá ser maior ou igual a 90.",
+              "timedOut": null,
+              "duration": 984,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.task('getCoverage', (0, _getId.getId)()).its('total.statements.pct', {\n  timeout: 0\n}).should('be.gte', 90.00);",
+              "err": {
+                "message": "CypressError: `cy.task('getCoverage')` failed with the following error:\n\n> Command failed: npm run test-coverage -- --coverageReporters=\"json-summary\" --testFailureExitCode=0\n\n\nhttps://on.cypress.io/api/task",
+                "estack": "CypressError: `cy.task('getCoverage')` failed with the following error:\n\n> Command failed: npm run test-coverage -- --coverageReporters=\"json-summary\" --testFailureExitCode=0\n\n\nhttps://on.cypress.io/api/task\n    at http://localhost:42077/__cypress/runner/cypress_runner.js:167117:78\n    at tryCatcher (http://localhost:42077/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (http://localhost:42077/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (http://localhost:42077/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (http://localhost:42077/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (http://localhost:42077/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (http://localhost:42077/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (http://localhost:42077/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:42077/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (http://localhost:42077/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:42077/__cypress/tests?p=cypress/integration/10.TestCoverage_spec.js:103:8)\n\nFrom Node.js Internals:\n  Error: Command failed: npm run test-coverage -- --coverageReporters=\"json-summary\" --testFailureExitCode=0\n  \n      at ChildProcess.exithandler (node:child_process:398:12)\n      at ChildProcess.emit (node:events:527:28)\n      at maybeClose (node:internal/child_process:1092:16)\n      at Socket.<anonymous> (node:internal/child_process:451:11)\n      at Socket.emit (node:events:527:28)\n      at Pipe.<anonymous> (node:net:709:12)",
+                "diff": null
+              },
+              "uuid": "97538039-4c50-40ce-bc76-1c5bcf7177f7",
+              "parentUUID": "3454043a-2970-4b6b-9c16-0a1b1d0c1a1f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cobertura de \"Functions\" total deverá ser maior ou igual a 90.",
+              "fullTitle": "10 - Desenvolva testes para atingir 90% de cobertura total da aplicação Cobertura de \"Functions\" total deverá ser maior ou igual a 90.",
+              "timedOut": null,
+              "duration": 977,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.task('getCoverage', (0, _getId.getId)()).its('total.functions.pct', {\n  timeout: 0\n}).should('be.gte', 90.00);",
+              "err": {
+                "message": "CypressError: `cy.task('getCoverage')` failed with the following error:\n\n> Command failed: npm run test-coverage -- --coverageReporters=\"json-summary\" --testFailureExitCode=0\n\n\nhttps://on.cypress.io/api/task",
+                "estack": "CypressError: `cy.task('getCoverage')` failed with the following error:\n\n> Command failed: npm run test-coverage -- --coverageReporters=\"json-summary\" --testFailureExitCode=0\n\n\nhttps://on.cypress.io/api/task\n    at http://localhost:42077/__cypress/runner/cypress_runner.js:167117:78\n    at tryCatcher (http://localhost:42077/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (http://localhost:42077/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (http://localhost:42077/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (http://localhost:42077/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (http://localhost:42077/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (http://localhost:42077/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (http://localhost:42077/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:42077/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (http://localhost:42077/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:42077/__cypress/tests?p=cypress/integration/10.TestCoverage_spec.js:108:8)\n\nFrom Node.js Internals:\n  Error: Command failed: npm run test-coverage -- --coverageReporters=\"json-summary\" --testFailureExitCode=0\n  \n      at ChildProcess.exithandler (node:child_process:398:12)\n      at ChildProcess.emit (node:events:527:28)\n      at maybeClose (node:internal/child_process:1092:16)\n      at Socket.<anonymous> (node:internal/child_process:451:11)\n      at Socket.emit (node:events:527:28)\n      at Pipe.<anonymous> (node:net:709:12)",
+                "diff": null
+              },
+              "uuid": "34498a71-35d3-428b-a318-04543beec4e4",
+              "parentUUID": "3454043a-2970-4b6b-9c16-0a1b1d0c1a1f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cobertura de \"Branches\" total deverá ser maior ou igual a 90.",
+              "fullTitle": "10 - Desenvolva testes para atingir 90% de cobertura total da aplicação Cobertura de \"Branches\" total deverá ser maior ou igual a 90.",
+              "timedOut": null,
+              "duration": 1003,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.task('getCoverage', (0, _getId.getId)()).its('total.branches.pct', {\n  timeout: 0\n}).should('be.gte', 90.00);",
+              "err": {
+                "message": "CypressError: `cy.task('getCoverage')` failed with the following error:\n\n> Command failed: npm run test-coverage -- --coverageReporters=\"json-summary\" --testFailureExitCode=0\n\n\nhttps://on.cypress.io/api/task",
+                "estack": "CypressError: `cy.task('getCoverage')` failed with the following error:\n\n> Command failed: npm run test-coverage -- --coverageReporters=\"json-summary\" --testFailureExitCode=0\n\n\nhttps://on.cypress.io/api/task\n    at http://localhost:42077/__cypress/runner/cypress_runner.js:167117:78\n    at tryCatcher (http://localhost:42077/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (http://localhost:42077/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (http://localhost:42077/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (http://localhost:42077/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (http://localhost:42077/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (http://localhost:42077/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (http://localhost:42077/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:42077/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (http://localhost:42077/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:42077/__cypress/tests?p=cypress/integration/10.TestCoverage_spec.js:113:8)\n\nFrom Node.js Internals:\n  Error: Command failed: npm run test-coverage -- --coverageReporters=\"json-summary\" --testFailureExitCode=0\n  \n      at ChildProcess.exithandler (node:child_process:398:12)\n      at ChildProcess.emit (node:events:527:28)\n      at maybeClose (node:internal/child_process:1092:16)\n      at Process.ChildProcess._handle.onexit (node:internal/child_process:302:5)",
+                "diff": null
+              },
+              "uuid": "04a45e0b-734c-4695-836b-3687bec39d72",
+              "parentUUID": "3454043a-2970-4b6b-9c16-0a1b1d0c1a1f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cobertura de \"Lines\" total deverá ser maior ou igual a 90.",
+              "fullTitle": "10 - Desenvolva testes para atingir 90% de cobertura total da aplicação Cobertura de \"Lines\" total deverá ser maior ou igual a 90.",
+              "timedOut": null,
+              "duration": 973,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.task('getCoverage', (0, _getId.getId)()).its('total.lines.pct', {\n  timeout: 0\n}).should('be.gte', 90.00);",
+              "err": {
+                "message": "CypressError: `cy.task('getCoverage')` failed with the following error:\n\n> Command failed: npm run test-coverage -- --coverageReporters=\"json-summary\" --testFailureExitCode=0\n\n\nhttps://on.cypress.io/api/task",
+                "estack": "CypressError: `cy.task('getCoverage')` failed with the following error:\n\n> Command failed: npm run test-coverage -- --coverageReporters=\"json-summary\" --testFailureExitCode=0\n\n\nhttps://on.cypress.io/api/task\n    at http://localhost:42077/__cypress/runner/cypress_runner.js:167117:78\n    at tryCatcher (http://localhost:42077/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (http://localhost:42077/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (http://localhost:42077/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (http://localhost:42077/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (http://localhost:42077/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (http://localhost:42077/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (http://localhost:42077/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:42077/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (http://localhost:42077/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:42077/__cypress/tests?p=cypress/integration/10.TestCoverage_spec.js:118:8)\n\nFrom Node.js Internals:\n  Error: Command failed: npm run test-coverage -- --coverageReporters=\"json-summary\" --testFailureExitCode=0\n  \n      at ChildProcess.exithandler (node:child_process:398:12)\n      at ChildProcess.emit (node:events:527:28)\n      at maybeClose (node:internal/child_process:1092:16)\n      at Process.ChildProcess._handle.onexit (node:internal/child_process:302:5)",
+                "diff": null
+              },
+              "uuid": "37039ea6-68b3-4376-93c4-8d3b8600b423",
+              "parentUUID": "3454043a-2970-4b6b-9c16-0a1b1d0c1a1f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "97538039-4c50-40ce-bc76-1c5bcf7177f7",
+            "34498a71-35d3-428b-a318-04543beec4e4",
+            "04a45e0b-734c-4695-836b-3687bec39d72",
+            "37039ea6-68b3-4376-93c4-8d3b8600b423"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 3937,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

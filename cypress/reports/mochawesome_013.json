@@ -1,0 +1,206 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-07-30T23:04:29.663Z",
+    "end": "2022-07-30T23:04:30.367Z",
+    "duration": 704,
+    "testsRegistered": 6,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 5,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "12cc0b57-1f38-4282-8c45-c37ceeaa5db8",
+      "title": "",
+      "fullFile": "cypress/integration/03.ExpensesForm_spec.js",
+      "file": "cypress/integration/03.ExpensesForm_spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "610e60ea-c190-419a-bd89-8da94e2cf093",
+          "title": "3 - Desenvolva um formulário para adicionar uma despesa contendo as seguintes características:",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Um campo para adicionar o valor da despesa",
+              "fullTitle": "3 - Desenvolva um formulário para adicionar uma despesa contendo as seguintes características: Um campo para adicionar o valor da despesa",
+              "timedOut": null,
+              "duration": 580,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.getByTestId(_constants.VALUE_INPUT_TEST_ID).should('exist');",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `3 - Desenvolva um formulári...`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `3 - Desenvolva um formulári...`\n    at http://localhost:42077/__cypress/runner/cypress_runner.js:163608:82\n    at visitFailedByErr (http://localhost:42077/__cypress/runner/cypress_runner.js:162912:12)\n    at http://localhost:42077/__cypress/runner/cypress_runner.js:163607:11\n    at tryCatcher (http://localhost:42077/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (http://localhost:42077/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (http://localhost:42077/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (http://localhost:42077/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (http://localhost:42077/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (http://localhost:42077/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (http://localhost:42077/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:42077/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (http://localhost:42077/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:42077/__cypress/tests?p=cypress/integration/03.ExpensesForm_spec.js:128:8)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:3000\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1161:16)\n  ",
+                "diff": null
+              },
+              "uuid": "bd4b73a7-438f-42f8-ba07-5611bc1fdeeb",
+              "parentUUID": "610e60ea-c190-419a-bd89-8da94e2cf093",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Um campo para adicionar a descrição da despesa",
+              "fullTitle": "3 - Desenvolva um formulário para adicionar uma despesa contendo as seguintes características: Um campo para adicionar a descrição da despesa",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.getByTestId(_constants.DESCRIPTION_INPUT_TEST_ID).should('exist');",
+              "err": {},
+              "uuid": "f10e140e-c519-42e8-8eea-95dc845955d3",
+              "parentUUID": "610e60ea-c190-419a-bd89-8da94e2cf093",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Um campo para selecionar em qual moeda será registrada a despesa",
+              "fullTitle": "3 - Desenvolva um formulário para adicionar uma despesa contendo as seguintes características: Um campo para selecionar em qual moeda será registrada a despesa",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.getByTestId(_constants.CURRENCY_INPUT_TEST_ID).find('option').should('have.length', _constants.currenciesOptions.length);\ncy.wrap(_constants.currenciesOptions).each(currency => {\n  cy.getByTestId(_constants.CURRENCY_INPUT_TEST_ID).contains('option', currency).should('exist');\n});",
+              "err": {},
+              "uuid": "46ce0ffb-c8d3-49bd-b2b9-bc56527c8dcb",
+              "parentUUID": "610e60ea-c190-419a-bd89-8da94e2cf093",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "A chave currencies no estado global deve ser um array de siglas puxadas através de uma requisição à API",
+              "fullTitle": "3 - Desenvolva um formulário para adicionar uma despesa contendo as seguintes características: A chave currencies no estado global deve ser um array de siglas puxadas através de uma requisição à API",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('@mockFetch').should('be.calledWith', 'https://economia.awesomeapi.com.br/json/all');\ncy.window().its('store').invoke('getState').its('wallet.currencies').should('deep.equal', _constants.currenciesOptions);",
+              "err": {},
+              "uuid": "a6c1087a-2b04-42f2-9437-3030471261d7",
+              "parentUUID": "610e60ea-c190-419a-bd89-8da94e2cf093",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Um campo para selecionar qual método de pagamento será utilizado",
+              "fullTitle": "3 - Desenvolva um formulário para adicionar uma despesa contendo as seguintes características: Um campo para selecionar qual método de pagamento será utilizado",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.getByTestId(_constants.METHOD_INPUT_TEST_ID).find('option').should('have.length', _constants.methodOptions.length);\ncy.wrap(_constants.methodOptions).each(method => {\n  cy.getByTestId(_constants.METHOD_INPUT_TEST_ID).contains('option', method).should('exist');\n});",
+              "err": {},
+              "uuid": "354a013c-4c50-4986-8811-955c8affe8fc",
+              "parentUUID": "610e60ea-c190-419a-bd89-8da94e2cf093",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Um campo para selecionar uma categoria (tag) para a despesa.",
+              "fullTitle": "3 - Desenvolva um formulário para adicionar uma despesa contendo as seguintes características: Um campo para selecionar uma categoria (tag) para a despesa.",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.getByTestId(_constants.TAG_INPUT_TEST_ID).find('option').should('have.length', _constants.tagOptions.length);\ncy.wrap(_constants.tagOptions).each(tag => {\n  cy.getByTestId(_constants.TAG_INPUT_TEST_ID).contains('option', tag).should('exist');\n});",
+              "err": {},
+              "uuid": "9a09672e-73f5-4885-9440-47b707c8a5ea",
+              "parentUUID": "610e60ea-c190-419a-bd89-8da94e2cf093",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "bd4b73a7-438f-42f8-ba07-5611bc1fdeeb"
+          ],
+          "pending": [],
+          "skipped": [
+            "f10e140e-c519-42e8-8eea-95dc845955d3",
+            "46ce0ffb-c8d3-49bd-b2b9-bc56527c8dcb",
+            "a6c1087a-2b04-42f2-9437-3030471261d7",
+            "354a013c-4c50-4986-8811-955c8affe8fc",
+            "9a09672e-73f5-4885-9440-47b707c8a5ea"
+          ],
+          "duration": 580,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
