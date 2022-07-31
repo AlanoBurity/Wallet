@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { fetchAPI } from '../redux/actions';
 
 class WalletForm extends Component {
-  constructor() {
+/*   constructor() {
     super();
 
     this.state = {
@@ -13,7 +14,7 @@ class WalletForm extends Component {
       method: 'Dinheiro',
       tag: 'Alimentação',
     };
-  }
+  } */
 
   componentDidMount() {
     const { fetchAPI: fetchCurrencies } = this.props;
@@ -87,6 +88,7 @@ const mapDispatchToProps = (dispatch) => ({
 const mapStateToProps = (state) => ({
   currencies: state.wallet.currencies,
 });
+
 WalletForm.propTypes = {
   currencies: PropTypes.arrayOf(PropTypes.string).isRequired,
   fetchAPI: PropTypes.func.isRequired,
