@@ -1,4 +1,5 @@
 // Coloque aqui suas actions
+
 const ACTIONS = {
   SET_EMAIL: 'SET_EMAIL',
 };
@@ -24,5 +25,23 @@ export function fetchAPI() {
     return dispatch(saveCurr(Object.keys(data).filter((item) => item !== 'USDT')));
   };
 }
+export const SAVE_EXPENSES = 'SAVE_EXPENSES';
 
+const forexApi = async () => {
+  const url = 'https://economia.awesomeapi.com.br/json/all';
+  const request = await fetch(url);
+  const response = await request.json();
+  return response;
+};
+
+export const saveExpenses = (expenses, response) => ({
+  type: SAVE_EXPENSES,
+  expenses,
+  response,
+});
+
+export const fetchExpense = (state) => async (dispatch) => {
+  const response = await forexApi();
+  return dispatch(saveExpenses(state, response));
+};
 export default ACTIONS;
