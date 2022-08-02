@@ -44,4 +44,8 @@ export const fetchExpense = (state) => async (dispatch) => {
   const response = await forexApi();
   return dispatch(saveExpenses(state, response));
 };
+export const DELETE_EXPENSES = 'DELETE_EXPENSES';
+
+export const deleteExpense = (newTable) => ({ type: DELETE_EXPENSES, newTable });
+
 export default ACTIONS;
