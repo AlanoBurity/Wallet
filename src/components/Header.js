@@ -1,15 +1,20 @@
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import React, { Component } from 'react';
+import '../style/Wallet.css';
+import moeda from '../images/moeda.svg';
+import user from '../images/User.svg';
 
 class Header extends Component {
   render() {
     const { email, expenses } = this.props;
     return (
-      <div>
-        <p data-testid="email-field">{email}</p>
-        <p data-testid="header-currency-field">BRL</p>
+      <div className="header">
+        <p className="wallet">Wallet</p>
         <p data-testid="total-field">
+          <img src={ moeda } alt="moeda" />
+          Total de despesas:
+          {' '}
           {
             expenses.value === 0 ? 0.00 : expenses.reduce((acc, cur) => {
               parseFloat(acc += (cur.exchangeRates[cur.currency].ask * cur.value));
@@ -18,6 +23,10 @@ class Header extends Component {
           }
 
         </p>
+        <div className="email-info">
+          <img src={ user } alt="User" className="user-icons" />
+          <p data-testid="email-field">{email}</p>
+        </div>
       </div>
     );
   }

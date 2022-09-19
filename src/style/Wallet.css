@@ -1,0 +1,128 @@
+body {
+  background-color: aquamarine;
+  border: 2px solid black;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+.header {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  height: 15vh;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 75vw;
+  box-shadow: -4px 9px 13px rgba(3, 107, 82, 0.3);
+  border-bottom-left-radius:5px ;
+  border-bottom-right-radius: 5px;
+}
+
+.wallet {
+  color: #2FC18C;
+  font-size: 25px;
+  font-weight: 800;
+  margin-left: 60px;
+}
+
+.email-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.user-icons {
+  margin-right: 10px;
+}
+
+.form {
+  justify-content: center;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  height: 110px;
+  width: 75vw;
+  padding-left: 50px;
+  padding-right: 50px; 
+  flex-wrap: wrap;
+  box-shadow: -4px 9px 13px rgba(3, 107, 82, 0.3);
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.contas {
+  width: 400px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.expense {
+  height: 30px;
+  margin-left: 20px;
+  width: 200px;
+}
+
+.tag {
+  border: 1px solid #003BE5;
+  margin-left: 20px;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.value {
+  height: 30px;
+  margin-left: 20px;
+  width: 90px;
+}
+
+.bttn-expenses {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ box-shadow: -4px 9px 13px rgba(3, 107, 82, 0.3);
+ background-color: white;
+ height: 90px;
+ border-radius: 5px;
+}
+
+.botao {
+  background: #2FC18C;
+  border: 1px solid #2FC18C;
+  border-radius: 5px;
+  color: white;
+  width: 350px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.tabela {
+  background-color:#003BE5;
+  border-radius: 5px;
+  box-shadow: -4px 9px 13px rgba(3, 107, 82, 0.3);
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+}
+
+th {
+  border-right: 2px solid white;
+  align-items: center;
+}
+
+thead {
+  border-bottom: 2px solid white;
+}
+
+tr {
+  border-bottom: 2px solid white;
+}

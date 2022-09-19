@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { deleteExpense } from '../redux/actions';
+import '../style/Wallet.css';
 
 class Table extends Component {
   handleDeleteExpense(id) {
@@ -13,8 +14,8 @@ class Table extends Component {
   render() {
     const { expenses } = this.props;
     return (
-      <div>
-        <table>
+      <div className="tabela">
+        <table className="body-table">
           <thead>
             <tr>
               <th>Descrição</th>
