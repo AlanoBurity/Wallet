@@ -11,8 +11,8 @@ class Header extends Component {
     return (
       <div className="header">
         <p className="wallet">Wallet</p>
-        <p data-testid="total-field">
-          <img src={ moeda } alt="moeda" />
+        <p data-testid="total-field" className="expenses-header">
+          <img src={ moeda } alt="moeda" className="expenses-total" />
           Total de despesas:
           {' '}
           {
@@ -25,7 +25,7 @@ class Header extends Component {
         </p>
         <div className="email-info">
           <img src={ user } alt="User" className="user-icons" />
-          <p data-testid="email-field">{email}</p>
+          <p data-testid="email-field" className="email-login">{email}</p>
         </div>
       </div>
     );

@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { deleteExpense } from '../redux/actions';
 import '../style/Wallet.css';
+import trash from '../images/trash.svg';
 
 class Table extends Component {
   handleDeleteExpense(id) {
@@ -26,7 +27,7 @@ class Table extends Component {
               <th>Câmbio utilizado</th>
               <th>Valor convertido</th>
               <th>Moeda de conversão</th>
-              <th>Editar/Excluir</th>
+              <th>Excluir</th>
             </tr>
           </thead>
           <tbody>
@@ -60,17 +61,14 @@ class Table extends Component {
                     </td>
                     <td>Real</td>
                     <td>
-                      <button type="button">
-                        Editar
-                      </button>
-                      <button
-                        type="button"
-                        data-testid="delete-btn"
+                      <img
+                        src={ trash }
+                        alt="delete-btn"
+                        role="button"
+                        tabIndex="0"
                         onClick={ () => this.handleDeleteExpense(e.id) }
-                      >
-                        Excluir
+                      />
 
-                      </button>
                     </td>
                   </tr>
                 ))

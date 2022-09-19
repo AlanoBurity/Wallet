@@ -63,12 +63,27 @@ body {
   align-items: center;
   justify-content: center;
   padding-top: 5px;
+  color:#003BE5;
+  font-weight: 700;
+
 }
 
 .expense {
   height: 30px;
   margin-left: 20px;
   width: 200px;
+  color: #003BE5;
+  font-weight: 400;
+}
+
+.expenses-total {
+margin-right: 10px;
+}
+
+.expenses-header {
+  font-weight: 700;
+  font-size: 15px;
+  color: #003BE5;
 }
 
 .tag {
@@ -76,12 +91,15 @@ body {
   margin-left: 20px;
   border-radius: 5px;
   height: 30px;
+  color: #003BE5;
+  font-weight: 400;
 }
 
 .value {
   height: 30px;
   margin-left: 20px;
   width: 90px;
+  color: #003BE5;
 }
 
 .bttn-expenses {
@@ -114,15 +132,24 @@ body {
   margin-top: 20px;
 }
 
-th {
-  border-right: 2px solid white;
-  align-items: center;
+table {
+  width: 100%;
+  padding-bottom: 20px;
+  padding-top: 10px;
 }
 
-thead {
-  border-bottom: 2px solid white;
+td {
+  text-align: center;
+  color: #2FC18C;
+  font-weight: 500;
 }
 
-tr {
-  border-bottom: 2px solid white;
+.email-login {
+font-weight: 700;
+font-size: 14px;
+line-height: 14px;
+display: flex;
+align-items: center;
+
+color: #2FC18C;
 }
