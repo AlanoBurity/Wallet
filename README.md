@@ -1,5 +1,8 @@
 # 🚧 README em construção 🚧
 
+Teste: Veja a aplicação funcionando.
+https://dancing-narwhal-8e758c.netlify.app/
+
 <!-- Olá, Tryber!
 
 Esse é apenas um arquivo inicial para o README do seu projeto.
