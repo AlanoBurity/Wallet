@@ -29,7 +29,10 @@ O Wallet é um rastreador de despesas com um conversor de moeda dentro, onde os 
 </details>   
 Os dados para conversão de moeda vieram da API(https://docs.awesomeapi.com.br/api-de-moedas).
 
-### Instalação 📋
+<details>
+  
+<summary><strong>:memo: Instalação </strong></summary><br />
+  
 1. Crie um diretório usando o comando **mkdir**:
 ```
   mkdir exemplo-project
@@ -51,6 +54,8 @@ Os dados para conversão de moeda vieram da API(https://docs.awesomeapi.com.br/a
 ```
   http://localhost:3000
 ```
+</details>
+  
 ### Visualise este projeto [aqui](https://dancing-narwhal-8e758c.netlify.app/)!
 
 </details>
