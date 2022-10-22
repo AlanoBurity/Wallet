@@ -29,7 +29,7 @@ O Wallet é um rastreador de despesas com um conversor de moeda dentro, onde os 
 </details>   
 
 <details>   
-<summary><strong>:memo: Habilidades</strong></summary><br />
+<summary><strong>:memo: API </strong></summary><br />
 Os dados para conversão de moeda vieram da API(https://docs.awesomeapi.com.br/api-de-moedas).
 </details>   
 
