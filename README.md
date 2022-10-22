@@ -27,7 +27,11 @@ O Wallet é um rastreador de despesas com um conversor de moeda dentro, onde os 
   * Criar links de navegação na aplicação com o componente Link;
 
 </details>   
+
+<details>   
+<summary><strong>:memo: Habilidades</strong></summary><br />
 Os dados para conversão de moeda vieram da API(https://docs.awesomeapi.com.br/api-de-moedas).
+</details>   
 
 <details>
   
